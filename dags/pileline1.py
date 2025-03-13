@@ -9,7 +9,7 @@ with DAG(
     schedule="@daily",
 ):
     procure_rocket_material = EmptyOperator(task_id="procure_rocket_material")
-    procure_fuel = EmptyOperator(task_id="procure_fuel")
+    procure_fuel = EmptyOperator(task_id="procedure_fuel")
     build_stage1 = EmptyOperator(task_id="build_stage1")
     build_stage2 = EmptyOperator(task_id="build_stage2")
     build_stage3 = EmptyOperator(task_id="build_stage3")
